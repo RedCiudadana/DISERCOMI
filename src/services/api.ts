@@ -290,18 +290,18 @@ const logAction = async (
   description: string,
   changes?: Record<string, any>
 ) => {
-  // In a real implementation, this would call the Supabase function
-  // For now, we'll simulate logging
+  // En una implementación real, esto llamaría a la función correspondiente del backend
+  // Para ahora, simularemos el registro
   console.log({
     timestamp: new Date().toISOString(),
-    user_name: 'Current User', // Would come from auth context
-    role: 'admin', // Would come from auth context
+    user_name: 'Current User', // Vendría del contexto de autenticación
+    role: 'admin', // Vendría del contexto de autenticación
     action_type: actionType,
     resource_type: resourceType,
     resource_id: resourceId,
     description,
     changes,
-    ip_address: '127.0.0.1', // Would come from request
+    ip_address: '127.0.0.1', // Vendría de la solicitud
     device_info: navigator.userAgent
   });
 };

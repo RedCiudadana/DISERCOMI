@@ -179,7 +179,7 @@ const Home: React.FC = () => {
                             <ArrowRight size={24} className="ml-3 transition-transform group-hover:translate-x-1" />
                           </Button>
                         </Link>
-                        {/* <Link to="/track">
+                        <Link to="/track">
                           <Button 
                             variant="outline" 
                             size="xl"
@@ -188,7 +188,7 @@ const Home: React.FC = () => {
                             <Play size={20} className="mr-2" />
                             Ver Demo
                           </Button>
-                        </Link> */}
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -493,7 +493,7 @@ const Home: React.FC = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
+                  className="border-white/30 hover:bg-white/10 backdrop-blur-sm"
                 >
                   Seguimiento
                 </Button>

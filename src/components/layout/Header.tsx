@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import Button from '../ui/Button';
-import LoginModal from '../auth/LoginModal';
+import { useNavigate } from 'react-router-dom';
 import { Menu, X, LogOut, User, HelpCircle } from 'lucide-react';
 
 const Header: React.FC = () => {
@@ -10,6 +10,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <header className="bg-white/95 backdrop-blur-md shadow-soft sticky top-0 z-50 border-b border-gray-200">
@@ -18,9 +19,9 @@ const Header: React.FC = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3 group">
               <img 
-                src="https://mineco.gob.gt/images/logos/Logo_Mineco_2024.png"
+                src="/Logos_Disercomi_WithType_5.png"
                 alt="MINECO"
-                className="h-12 transition-transform group-hover:scale-105"
+                className="h-10 transition-transform group-hover:scale-105"
               />
             </Link>
           </div>
@@ -110,7 +111,7 @@ const Header: React.FC = () => {
                 {isUserMenuOpen && (
                   <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-large border border-gray-200 py-1 animate-scale-in">
                     <Link
-                      to="/admin/profile"
+                      to="/profile"
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-government-50 hover:text-government-600 flex items-center transition-colors"
                       onClick={() => setIsUserMenuOpen(false)}
                     >
@@ -131,7 +132,7 @@ const Header: React.FC = () => {
                 )}
               </div>
             ) : (
-              <Button onClick={() => setIsLoginModalOpen(true)} size="md">
+              <Button onClick={() => navigate('/login')} size="md">
                 Iniciar Sesión
               </Button>
             )}
@@ -139,10 +140,6 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      <LoginModal
-        isOpen={isLoginModalOpen}
-        onClose={() => setIsLoginModalOpen(false)}
-      />
     </header>
   );
 };

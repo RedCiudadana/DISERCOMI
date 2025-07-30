@@ -11,43 +11,6 @@ const ApiDocumentation: React.FC = () => {
 
       <div className="space-y-8">
         <section>
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Configuración de Supabase</h2>
-          <div className="bg-white p-6 rounded-lg shadow-md space-y-4">
-            <p className="text-gray-600">
-              Para comenzar, necesitará configurar su conexión a Supabase:
-            </p>
-            <ol className="list-decimal pl-6 space-y-4">
-              <li className="text-gray-700">
-                <strong>Crear proyecto en Supabase:</strong>
-                <ul className="mt-2 space-y-2">
-                  <li className="flex items-start">
-                    <Check size={20} className="text-green-500 mr-2 mt-1 flex-shrink-0" />
-                    <span>Visite <a href="https://supabase.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Supabase</a> y cree una nueva cuenta o inicie sesión</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check size={20} className="text-green-500 mr-2 mt-1 flex-shrink-0" />
-                    <span>Cree un nuevo proyecto desde el dashboard</span>
-                  </li>
-                </ul>
-              </li>
-              <li className="text-gray-700">
-                <strong>Obtener credenciales:</strong>
-                <ul className="mt-2 space-y-2">
-                  <li className="flex items-start">
-                    <Check size={20} className="text-green-500 mr-2 mt-1 flex-shrink-0" />
-                    <span>En la configuración del proyecto, busque la sección "API"</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check size={20} className="text-green-500 mr-2 mt-1 flex-shrink-0" />
-                    <span>Copie el "Project URL" y "anon public" key</span>
-                  </li>
-                </ul>
-              </li>
-            </ol>
-          </div>
-        </section>
-
-        <section>
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Endpoints Disponibles</h2>
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -146,41 +109,6 @@ const ApiDocumentation: React.FC = () => {
                 </pre>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Ejemplo de Integración</h2>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <pre className="text-sm bg-gray-50 p-4 rounded-md overflow-x-auto">
-{`// Configuración de Supabase
-const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
-
-// Ejemplo de llamada a la API
-const getProcedures = async () => {
-  const response = await fetch(\`\${SUPABASE_URL}/functions/v1/procedures-api\`, {
-    headers: {
-      'Authorization': \`Bearer \${SUPABASE_ANON_KEY}\`,
-      'Content-Type': 'application/json',
-    },
-  });
-  
-  if (!response.ok) {
-    throw new Error('Error al obtener trámites');
-  }
-  
-  return response.json();
-};
-
-// Uso del servicio
-try {
-  const procedures = await getProcedures();
-  console.log('Trámites:', procedures);
-} catch (error) {
-  console.error('Error:', error);
-}`}
-            </pre>
           </div>
         </section>
       </div>

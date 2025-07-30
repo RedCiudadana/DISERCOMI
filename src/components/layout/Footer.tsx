@@ -10,9 +10,9 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <img 
-                src="https://mineco.gob.gt/images/logos/Logo_Mineco_2024.png"
+                src="/Logos_Disercomi_WithType_5.png"
                 alt="MINECO"
-                className="h-16 filter brightness-0 invert"
+                className="h-12 filter brightness-0 invert"
               />
             </div>
             <p className="text-gray-300 mb-6">

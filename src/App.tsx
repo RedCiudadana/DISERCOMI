@@ -7,6 +7,7 @@ import Footer from './components/layout/Footer';
 import ProtectedRoute from './components/layout/ProtectedRoute';
 import FeedbackButton from './components/ui/FeedbackButton';
 import Chatbot from './components/ui/Chatbot';
+import GDPRBar from './components/ui/GDPRBar';
 
 // Pages
 import Home from './pages/Home';
@@ -17,10 +18,13 @@ import TrackProcedure from './pages/procedures/TrackProcedure';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import AdminProfile from './pages/admin/Profile';
 import BitacoraLogs from './pages/admin/BitacoraLogs';
+import Profile from './pages/profile/Profile';
 import Documentation from './pages/docs/Documentation';
 import ApiDocumentation from './pages/docs/ApiDocumentation';
 import ProcessFlow from './pages/docs/ProcessFlow';
 import SupportCenter from './pages/docs/SupportCenter';
+import Login from './pages/auth/Login';
+import Register from './pages/auth/Register';
 import Terms from './pages/legal/Terms';
 import Privacy from './pages/legal/Privacy';
 import SiteMap from './pages/SiteMap';
@@ -41,6 +45,16 @@ function App() {
                 <Route path="/procedures/new" element={<ProcedureForm />} />
                 <Route path="/procedures/:id" element={<ProcedureDetail />} />
                 <Route path="/track" element={<TrackProcedure />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+                <Route 
+                  path="/profile" 
+                  element={
+                    <ProtectedRoute>
+                      <Profile />
+                    </ProtectedRoute>
+                  } 
+                />
                 <Route 
                   path="/admin" 
                   element={
@@ -80,6 +94,7 @@ function App() {
             <Footer />
             <FeedbackButton />
             <Chatbot />
+            <GDPRBar />
           </div>
         </Router>
       </ProcedureProvider>

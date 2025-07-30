@@ -45,7 +45,7 @@ const BitacoraLogs: React.FC = () => {
   const fetchLogs = async () => {
     try {
       setLoading(true);
-      // TODO: Replace with actual Supabase query
+      // TODO: Reemplazar con la consulta real al backend
       const response = await fetch('/api/bitacora');
       const data = await response.json();
       setLogs(data);
