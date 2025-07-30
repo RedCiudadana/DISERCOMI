@@ -1,8 +1,4 @@
-# DISERCOMI - Plataforma de Gestión de Trámites Exportadores
-
-## 📋 Descripción
-
-DISERCOMI es una plataforma web moderna desarrollada en React y TypeScript que permite la gestión digital de trámites de exportación. La aplicación facilita a las empresas guatemaltecas realizar sus trámites de comercio exterior de manera eficiente y transparente.
+# DISERCOMI 
 
 ## 🚀 Funcionalidades Principales
 
