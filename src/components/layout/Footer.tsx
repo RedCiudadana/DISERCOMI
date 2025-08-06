@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
               />
             </div>
             <p className="text-gray-300 mb-6">
-              Dirección de Servicios al Comercio y a la Inversión. Facilitando trámites para empresas y exportadores en Guatemala.
+              Dirección de Servicios al Comercio y a la Inversión. 
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
@@ -45,11 +45,6 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/documentation" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Documentación
-                </Link>
-              </li>
-              <li>
                 <Link to="/disercomi" className="text-gray-300 hover:text-primary-400 transition-colors">
                   Acerca de DISERCOMI
                 </Link>
@@ -57,11 +52,6 @@ const Footer: React.FC = () => {
               <li>
                 <Link to="/sitemap" className="text-gray-300 hover:text-primary-400 transition-colors">
                   Mapa del Sitio
-                </Link>
-              </li>
-              <li>
-                <Link to="/api-docs" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  API
                 </Link>
               </li>
             </ul>
@@ -99,7 +89,7 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <MapPin size={20} className="text-primary-400 mr-2 flex-shrink-0 mt-1" />
                 <span className="text-gray-300">
-                  7a. Avenida 7-61, Zona 4, Ciudad de Guatemala
+                  8a. Avenida 10-43, Zona 1, Ciudad de Guatemala Guatemala, CA 
                 </span>
               </li>
               <li className="flex items-center">

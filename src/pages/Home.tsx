@@ -42,41 +42,41 @@ const Home: React.FC = () => {
       description: 'Complete formularios en línea sin necesidad de desplazarse físicamente.',
       color: 'from-primary-500 to-primary-600'
     },
-    {
-      icon: CheckCircle,
-      title: 'Validación Automática',
-      description: 'Verificamos sus datos con instituciones públicas en tiempo real.',
-      color: 'from-secondary-500 to-secondary-600'
-    },
+    // {
+    //   icon: CheckCircle,
+    //   title: 'Validación Automática',
+    //   description: 'Verificamos sus datos con instituciones públicas en tiempo real.',
+    //   color: 'from-secondary-500 to-secondary-600'
+    // },
     {
       icon: Clock,
       title: 'Seguimiento en Tiempo Real',
       description: 'Consulte el estado de sus trámites en cualquier momento.',
       color: 'from-primary-600 to-primary-700'
-    },
-    {
-      icon: CreditCard,
-      title: 'Pagos en Línea',
-      description: 'Realice pagos de forma segura a través de nuestra plataforma.',
-      color: 'from-secondary-600 to-secondary-700'
     }
+    // {
+    //   icon: CreditCard,
+    //   title: 'Pagos en Línea',
+    //   description: 'Realice pagos de forma segura a través de nuestra plataforma.',
+    //   color: 'from-secondary-600 to-secondary-700'
+    // }
   ];
 
   const procedures = [
     {
-      title: 'Inscripción como Exportador',
+      title: 'Calificación',
       description: 'Registre su empresa como exportadora y acceda a los beneficios del comercio internacional.',
       icon: Globe,
       gradient: 'from-primary-500 to-primary-600'
     },
     {
-      title: 'Certificado de Origen',
+      title: 'Revocatoria',
       description: 'Obtenga su certificado de origen para bienes exportados bajo acuerdos comerciales.',
       icon: Shield,
       gradient: 'from-secondary-500 to-secondary-600'
     },
     {
-      title: 'Licencia de Exportación',
+      title: 'Cancelación',
       description: 'Solicite licencias para exportar productos regulados a mercados internacionales.',
       icon: Zap,
       gradient: 'from-primary-600 to-secondary-600'
@@ -84,10 +84,9 @@ const Home: React.FC = () => {
   ];
 
   const stats = [
-    { number: '15', label: 'Días promedio', sublabel: 'de procesamiento' },
     { number: '24/7', label: 'Disponibilidad', sublabel: 'del sistema' },
     { number: '100%', label: 'Digital', sublabel: 'sin papeles' },
-    { number: '500+', label: 'Empresas', sublabel: 'registradas' }
+    { number: '900+', label: 'Empresas', sublabel: 'registradas' }
   ];
 
   // Auto-advance slides
@@ -186,7 +185,7 @@ const Home: React.FC = () => {
                             className="border-white/30 hover:bg-white/10 backdrop-blur-sm"
                           >
                             <Play size={20} className="mr-2" />
-                            Ver Demo
+                            Seguimiento a Trámite
                           </Button>
                         </Link>
                       </div>
@@ -256,7 +255,7 @@ const Home: React.FC = () => {
       {/* Stats section */}
       <section className="py-16 bg-gradient-to-r from-primary-50 to-secondary-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent mb-2">
@@ -282,7 +281,7 @@ const Home: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {features.map((feature, index) => (
               <div 
                 key={index} 
@@ -364,7 +363,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className="group bg-white p-8 rounded-2xl shadow-soft hover:shadow-large transition-all duration-300 border border-gray-200 hover:border-success-200 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="flex items-center justify-center h-14 w-14 rounded-xl bg-gradient-to-r from-success-500 to-success-600 text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-soft mx-auto">
+              <div className="flex items-center justify-center h-14 w-14 rounded-xl bg-gradient-to-r from-secondary-500 to-secondary-600 text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-soft mx-auto">
                 <FileText size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900 group-hover:text-success-700 transition-colors text-center">
@@ -378,7 +377,7 @@ const Home: React.FC = () => {
                   href="https://www.mineco.gob.gt/images/viceministerio_inversion_competencia/direccion_servicio_al_comercio/Boleta_estadistica_2024.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-success-500 to-success-600 hover:from-success-600 hover:to-success-700 text-white font-semibold rounded-xl transition-all duration-200 shadow-soft hover:shadow-medium group/btn"
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-600 hover:to-secondary-700 text-white font-semibold rounded-xl transition-all duration-200 shadow-soft hover:shadow-medium group/btn"
                 >
                   Descargar PDF
                   <ArrowRight size={20} className="ml-2 transition-transform group-hover/btn:translate-x-1" />

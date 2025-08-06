@@ -67,11 +67,11 @@ const SiteMap: React.FC = () => {
                 Flujo del Proceso
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/api-docs" className="text-[#005bac] hover:text-[#004a8f]">
                 API
               </Link>
-            </li>
+            </li> */}
           </ul>
         </section>
 

@@ -29,40 +29,12 @@ const Disercomi: React.FC = () => {
           </div>
         </section>
 
-        {/* Acerca de la DACE */}
-        <section className="mb-16 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-          <div className="bg-white rounded-2xl shadow-soft p-8 border border-gray-200">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Acerca de la DACE</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              La Dirección de Análisis y Control de Exportaciones (DACE) trabaja en conjunto con DISERCOMI para 
-              garantizar el cumplimiento de las normativas y facilitar los procesos de exportación, contribuyendo 
-              al desarrollo del comercio exterior guatemalteco.
-            </p>
-          </div>
-        </section>
-
         {/* Marco Legal */}
         <section className="mb-16 animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <div className="bg-white rounded-2xl shadow-soft p-8 border border-gray-200">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Marco Legal y Competencias</h2>
             <div className="space-y-6">
-              <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-xl p-6 border border-primary-200">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Que sustenta su existencia y competencia:</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700">
-                      <strong>Acuerdo Gubernativo 211-2019:</strong> Reglamento Orgánico Interno del Ministerio de Economía
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700">
-                      <strong>Acuerdo Ministerial 762-2019:</strong> Estructura Orgánica Interna Complementaria a la Estructura establecida en el Reglamento Orgánico Interno
-                    </span>
-                  </li>
-                </ul>
-              </div>
+              
 
               <div className="bg-gradient-to-r from-secondary-50 to-primary-50 rounded-xl p-6 border border-secondary-200">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">DISERCOMI opera bajo:</h3>
@@ -81,6 +53,24 @@ const Disercomi: React.FC = () => {
                   </li>
                 </ul>
               </div>
+              <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-xl p-6 border border-primary-200">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Que sustenta su existencia y competencia:</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700">
+                      <strong>Acuerdo Gubernativo 211-2019:</strong> Reglamento Orgánico Interno del Ministerio de Economía
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700">
+                      <strong>Acuerdo Ministerial 762-2019:</strong> Estructura Orgánica Interna Complementaria a la Estructura establecida en el Reglamento Orgánico Interno
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              
             </div>
           </div>
         </section>

@@ -19,9 +19,16 @@ const Header: React.FC = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3 group">
               <img 
+                src="https://mineco.gob.gt/images/logos/LOGO_MINECO_2024_2028H.png"
+                alt="DISERCOMI"
+                className="h-14 transition-transform group-hover:scale-105"
+              />
+            </Link>
+            <Link to="/" className="flex items-center space-x-3 group">
+              <img 
                 src="/Logos_Disercomi_WithType_5.png"
                 alt="MINECO"
-                className="h-10 transition-transform group-hover:scale-105"
+                className="h-14 transition-transform group-hover:scale-105"
               />
             </Link>
           </div>
@@ -84,12 +91,12 @@ const Header: React.FC = () => {
                   >
                     Dashboard
                   </Link>
-                  <Link 
+                  {/* <Link 
                     to="/admin/expediente" 
                     className="text-gray-700 hover:text-government-600 font-medium px-3 py-2 rounded-lg hover:bg-government-50 transition-all duration-200"
                   >
                     Expedientes
-                  </Link>
+                  </Link> */}
                 </>
               )}
             </div>
