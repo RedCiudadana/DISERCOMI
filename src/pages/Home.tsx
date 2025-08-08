@@ -25,14 +25,6 @@ const Home: React.FC = () => {
       ctaLink: "/track",
       gradient: "from-secondary-900 via-secondary-800 to-primary-900"
     },
-    {
-      title: "Validación automática con instituciones públicas",
-      subtitle: "Verificamos sus datos con SAT, RENAP y Registro Mercantil en tiempo real para agilizar sus trámites.",
-      image: "https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg",
-      cta: "Conocer Más",
-      ctaLink: "/process-flow",
-      gradient: "from-primary-800 via-secondary-800 to-primary-900"
-    }
   ];
 
   const features = [

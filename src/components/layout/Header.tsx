@@ -83,6 +83,13 @@ const Header: React.FC = () => {
                 <HelpCircle size={16} className="mr-1" />
                 Ayuda
               </Link>
+              <Link 
+                to="#" 
+                className="text-gray-700 hover:text-government-600 font-medium flex items-center px-3 py-2 rounded-lg hover:bg-government-50 transition-all duration-200"
+              >
+                <HelpCircle size={16} className="mr-1" />
+                Estadísticas
+              </Link>
               {user?.role === 'admin' && (
                 <>
                   <Link 

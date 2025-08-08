@@ -29,6 +29,56 @@ const Disercomi: React.FC = () => {
           </div>
         </section>
 
+        {/* Servicios quie presta */}
+        <section className="animate-slide-up" style={{ animationDelay: '0.6s' }}>
+          <div className="bg-white rounded-2xl shadow-soft p-8 border border-gray-200">
+            <div className="flex items-center mb-8">
+              <div className="w-12 h-12 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-xl flex items-center justify-center mr-4">
+                <Gift size={24} className="text-white" />
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900">Servicios que presta</h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="group bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-6 border border-primary-200 hover:shadow-medium transition-all duration-300">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
+                    <Building2 size={20} className="text-white" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900">Maquiladora</h3>
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Maquiladora y/o exportadora bajo el régimen de admisión temporal
+                </p>
+              </div>
+
+              <div className="group bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-xl p-6 border border-secondary-200 hover:shadow-medium transition-all duration-300">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
+                    <Building2 size={20} className="text-white" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900">Productora</h3>
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Productora bajo el régimen de admisión temporal
+                </p>
+              </div>
+
+              <div className="group bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-xl p-6 border border-secondary-200 hover:shadow-medium transition-all duration-300">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
+                    <Gift size={20} className="text-white" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900">Prestadora de servicios</h3>
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Prestadora de servicios
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Marco Legal */}
         <section className="mb-16 animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <div className="bg-white rounded-2xl shadow-soft p-8 border border-gray-200">
@@ -125,7 +175,7 @@ const Disercomi: React.FC = () => {
         <section className="animate-slide-up" style={{ animationDelay: '0.6s' }}>
           <div className="bg-white rounded-2xl shadow-soft p-8 border border-gray-200">
             <div className="flex items-center mb-8">
-              <div className="w-12 h-12 bg-gradient-to-r from-success-500 to-success-600 rounded-xl flex items-center justify-center mr-4">
+              <div className="w-12 h-12 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-xl flex items-center justify-center mr-4">
                 <Gift size={24} className="text-white" />
               </div>
               <h2 className="text-3xl font-bold text-gray-900">Beneficios</h2>
@@ -158,9 +208,9 @@ const Disercomi: React.FC = () => {
                 </p>
               </div>
 
-              <div className="group bg-gradient-to-br from-success-50 to-success-100 rounded-xl p-6 border border-success-200 hover:shadow-medium transition-all duration-300">
+              <div className="group bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-xl p-6 border border-secondary-200 hover:shadow-medium transition-all duration-300">
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-gradient-to-r from-success-500 to-success-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-10 h-10 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
                     <MapPin size={20} className="text-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900">Sin Desplazamientos</h3>
