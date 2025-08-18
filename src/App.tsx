@@ -29,6 +29,7 @@ import Terms from './pages/legal/Terms';
 import Privacy from './pages/legal/Privacy';
 import SiteMap from './pages/SiteMap';
 import Disercomi from './pages/about/Disercomi';
+import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -88,6 +89,7 @@ function App() {
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="/sitemap" element={<SiteMap />} />
                 <Route path="/disercomi" element={<Disercomi />} />
+                <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>

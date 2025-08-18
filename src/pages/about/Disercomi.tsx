@@ -1,6 +1,10 @@
 import React from 'react';
-import { Building2, Target, Eye, Gift, Clock, Shield, MapPin } from 'lucide-react';
+import { Building2, Target, Eye, Gift, Clock, Shield, MapPin, Download } from 'lucide-react';
 import Hero from '../../components/ui/Hero';
+import Decreto6589 from '../../assets/reglamentos/Decreto 65-89 Zonas Francas.pdf';
+import Decreto2989 from '../../assets/reglamentos/DECRETO DEL CONGRESO 29-89  Maquillas y exportadores.pdf';
+import Reglamento2989 from '../../assets/reglamentos/REGLAMENTO 29-89 ACUERDO GUBERNATIVO 533-89.pdf';
+import ReglamentoZonasFrancas from '../../assets/reglamentos/reglamento zonas francas ACUERDO GUBERNATIVO 242-90.pdf';
 
 const Disercomi: React.FC = () => {
   return (
@@ -119,6 +123,61 @@ const Disercomi: React.FC = () => {
                     </span>
                   </li>
                 </ul>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div className="group bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-6 border border-primary-200 hover:shadow-medium transition-all duration-300" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+                  <div className="flex items-center mb-4">
+                    <h3 className="text-lg font-semibold text-gray-900">Reglamento 29-89 Acuerdo Gubernativo 533-89 </h3>
+                  </div>
+                  <a href={Reglamento2989} target="_blank" rel="noopener noreferrer">
+                    <div className="w-10 h-10 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
+                      <Download size={20} className="text-white" />
+                    </div>  
+                  </a>
+                </div>
+
+                <div className="group bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-xl p-6 border border-secondary-200 hover:shadow-medium transition-all duration-300" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+                  <div className="flex items-center mb-4">
+                    <h3 className="text-lg font-semibold text-gray-900">Decreto 65-89 Zonas Francas</h3>
+                  </div>
+                  <a href={Decreto6589} target="_blank" rel="noopener noreferrer">
+                    <div className="w-10 h-10 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
+                      <Download size={20} className="text-white" />
+                    </div>
+                  </a>
+                </div>
+
+                <div className="group bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-xl p-6 border border-secondary-200 hover:shadow-medium transition-all duration-300" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+                  <div className="flex items-center mb-4">
+                    <h3 className="text-lg font-semibold text-gray-900">Reglamento zonas francas acuerdo gubernativo 242-90</h3>
+                  </div>
+                  <a href={ReglamentoZonasFrancas} target="_blank" rel="noopener noreferrer">
+                    <div className="w-10 h-10 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
+                      <Download size={20} className="text-white" />
+                    </div>
+                  </a>
+                </div>
+
+                <div className="group bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-xl p-6 border border-secondary-200 hover:shadow-medium transition-all duration-300" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+                  <div className="flex items-center mb-4">
+                    <h3 className="text-lg font-semibold text-gray-900">Decreto del congreso 29-89  Maquillas y exportadores</h3>
+                  </div>
+                  <a href={Decreto2989} target="_blank" rel="noopener noreferrer">
+                    <div className="w-10 h-10 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
+                      <Download size={20} className="text-white" />
+                    </div>
+                  </a>
+                </div>
+
+                <div className="group bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-xl p-6 border border-secondary-200 hover:shadow-medium transition-all duration-300" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+                  <div className="flex items-center mb-4">
+                    <h3 className="text-lg font-semibold text-gray-900">Tarifario</h3>
+                  </div>
+                  <div className="w-10 h-10 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
+                    <Download size={20} className="text-white" />
+                  </div>
+                </div>
               </div>
               
             </div>

@@ -379,9 +379,16 @@ const categories = [
   { value: 'cancellation', label: 'Cancelación' }
 ];
 
+const decretos = [
+  { value: 'all', label: 'Todos los decretos' },
+  { value: 'd2989', label: 'Decreto 29-89' },
+  { value: 'd6589', label: 'Decreto 65-89' },
+];
+
 const ProcessFlow: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedDecreto, setSelectedDecreto] = useState('all');
   const [expandedProcedures, setExpandedProcedures] = useState<Set<number>>(new Set());
 
   const toggleProcedureExpansion = (procedureId: number) => {
@@ -432,7 +439,7 @@ const ProcessFlow: React.FC = () => {
 
         <div className="bg-white shadow-soft rounded-2xl overflow-hidden mb-8 border border-gray-200 animate-slide-up">
           <div className="p-6 border-b border-gray-200 bg-gradient-to-r from-primary-50 to-secondary-50">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="relative">
                 <Input
                   id="search"
@@ -447,6 +454,12 @@ const ProcessFlow: React.FC = () => {
                 options={categories}
                 value={selectedCategory}
                 onChange={(value) => setSelectedCategory(value)}
+                fullWidth
+              />
+              <Select
+                options={decretos}
+                value={selectedDecreto}
+                onChange={(value) => setSelectedDecreto(value)}
                 fullWidth
               />
             </div>
@@ -473,7 +486,7 @@ const ProcessFlow: React.FC = () => {
                       <p className="text-gray-600 mb-4 leading-relaxed">{procedure.description}</p>
                       
                       {/* Basic Info */}
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                         <div className="bg-primary-50 rounded-lg p-3 border border-primary-200">
                           <div className="flex items-center text-primary-700 mb-1">
                             <Clock size={16} className="mr-2" />
@@ -481,13 +494,13 @@ const ProcessFlow: React.FC = () => {
                           </div>
                           <p className="text-sm text-primary-800 font-medium">{procedure.estimatedTime}</p>
                         </div>
-                        <div className="bg-success-50 rounded-lg p-3 border border-success-200">
+                        {/* <div className="bg-success-50 rounded-lg p-3 border border-success-200">
                           <div className="flex items-center text-success-700 mb-1">
                             <FileText size={16} className="mr-2" />
                             <span className="text-sm font-semibold">Costo</span>
                           </div>
                           <p className="text-sm text-success-800 font-medium">{procedure.cost}</p>
-                        </div>
+                        </div> */}
                         <div className="bg-secondary-50 rounded-lg p-3 border border-secondary-200">
                           <div className="flex items-center text-secondary-700 mb-1">
                             <FileCheck size={16} className="mr-2" />

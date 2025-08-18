@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Facebook, Twitter, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Music2, Twitter, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -19,14 +19,14 @@ const Footer: React.FC = () => {
               Dirección de Servicios al Comercio y a la Inversión. 
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
-                <Facebook size={20} />
+              <a href="https://www.instagram.com/minecogt" className="text-gray-400 hover:text-primary-400 transition-colors">
+                <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
+              <a href="https://x.com/MINECOGT" className="text-gray-400 hover:text-primary-400 transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
-                <Instagram size={20} />
+              <a href="https://www.tiktok.com/@minecogt" className="text-gray-400 hover:text-primary-400 transition-colors">
+                <Music2 size={20} />
               </a>
             </div>
           </div>
@@ -52,6 +52,11 @@ const Footer: React.FC = () => {
               <li>
                 <Link to="/sitemap" className="text-gray-300 hover:text-primary-400 transition-colors">
                   Mapa del Sitio
+                </Link>
+              </li>
+              <li>
+                <Link to="/support" className="text-gray-300 hover:text-primary-400 transition-colors">
+                  Ayuda
                 </Link>
               </li>
             </ul>

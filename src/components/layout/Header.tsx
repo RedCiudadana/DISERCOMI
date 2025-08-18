@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import Button from '../ui/Button';
 import { useNavigate } from 'react-router-dom';
-import { Menu, X, LogOut, User, HelpCircle } from 'lucide-react';
+import { Menu, X, LogOut, User, HelpCircle, ChevronDown } from 'lucide-react';
 
 const Header: React.FC = () => {
   const { user, logout } = useAuth();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+  const [isStatsMenuOpen, setIsStatsMenuOpen] = useState(false);
   const navigate = useNavigate();
 
   return (
@@ -77,18 +78,45 @@ const Header: React.FC = () => {
                 Seguimiento
               </Link>
               <Link 
-                to="/support" 
-                className="text-gray-700 hover:text-government-600 font-medium flex items-center px-3 py-2 rounded-lg hover:bg-government-50 transition-all duration-200"
+                to="#" 
+                className="text-gray-700 hover:text-government-600 font-medium flex items-center px-3 py-2 rounded-lg hover:bg-government-50 transition-all duration-200 relative"
+                onClick={() => setIsStatsMenuOpen(!isStatsMenuOpen)}
+                onMouseEnter={() => setIsStatsMenuOpen(true)}
+                onMouseLeave={() => setIsStatsMenuOpen(false)}
               >
-                <HelpCircle size={16} className="mr-1" />
-                Ayuda
+                Estadísticas
+                <ChevronDown size={16} className="ml-1" />
+                {isStatsMenuOpen && (
+                  <div 
+                    className="absolute left-0 top-full w-56 bg-white rounded-xl shadow-large border border-gray-200 py-2 z-50"
+                    onMouseEnter={() => setIsStatsMenuOpen(true)}
+                    onMouseLeave={() => setIsStatsMenuOpen(false)}
+                  >
+                    <a
+                      href="https://app.powerbi.com/view?r=eyJrIjoiMjc0ZjVmNTItM2ZhMS00NzE3LThhNTEtNjcxOGIzZDE2NjNiIiwidCI6ImJhNzllNzM5LTE4ZmItNGNmOS04OWM5LWM3NWYzYjBlNDFlZSIsImMiOjR9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-government-50 hover:text-government-600 transition-colors"
+                    >
+                      Boleta Estadística 2024
+                    </a>
+                    <a
+                      href="https://www.mineco.gob.gt/images/viceministerio_inversion_competencia/direccion_servicio_al_comercio/Boleta_estadistica_2024.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-government-50 hover:text-government-600 transition-colors"
+                    >
+                      Reporte Boleta Estadística 2024
+                    </a>
+                  </div>
+                )}
               </Link>
               <Link 
-                to="#" 
+                to="/contact" 
                 className="text-gray-700 hover:text-government-600 font-medium flex items-center px-3 py-2 rounded-lg hover:bg-government-50 transition-all duration-200"
               >
                 <HelpCircle size={16} className="mr-1" />
-                Estadísticas
+                Contacto
               </Link>
               {user?.role === 'admin' && (
                 <>
