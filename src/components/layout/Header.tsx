@@ -15,20 +15,20 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white/95 backdrop-blur-md shadow-soft sticky top-0 z-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between h-20 items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3 group">
               <img 
                 src="https://mineco.gob.gt/images/logos/LOGO_MINECO_2024_2028H.png"
                 alt="DISERCOMI"
-                className="h-14 transition-transform group-hover:scale-105"
+                className="h-14 w-100 transition-transform group-hover:scale-105"
               />
             </Link>
             <Link to="/" className="flex items-center space-x-3 group">
               <img 
                 src="/Logos_Disercomi_WithType_5.png"
                 alt="MINECO"
-                className="h-14 transition-transform group-hover:scale-105"
+                className="h-14 w-100 transition-transform group-hover:scale-105"
               />
             </Link>
           </div>
