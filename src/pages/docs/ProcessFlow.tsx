@@ -14,6 +14,7 @@ interface Procedure {
   steps: string[];
   estimatedTime: string;
   cost: string;
+  decreto: string;
 }
 
 const procedures: Procedure[] = [
@@ -32,7 +33,8 @@ const procedures: Procedure[] = [
       'Notificación al solicitante'
     ],
     estimatedTime: '15-20 días hábiles',
-    cost: 'Q. 500.00'
+    cost: 'Q. 500.00',
+    decreto: 'Decreto 29-89'
   },
   {
     id: 2,
@@ -48,7 +50,8 @@ const procedures: Procedure[] = [
       'Emisión de resolución de prórroga'
     ],
     estimatedTime: '10-15 días hábiles',
-    cost: 'Q. 200.00'
+    cost: 'Q. 200.00',
+    decreto: 'Decreto 29-89'
   },
   {
     id: 3,
@@ -63,7 +66,8 @@ const procedures: Procedure[] = [
       'Emisión de nueva resolución con nombre actualizado'
     ],
     estimatedTime: '5-8 días hábiles',
-    cost: 'Q. 150.00'
+    cost: 'Q. 150.00',
+    decreto: 'Decreto 29-89'
   },
   {
     id: 4,
@@ -78,7 +82,8 @@ const procedures: Procedure[] = [
       'Emisión de resolución modificatoria'
     ],
     estimatedTime: '8-12 días hábiles',
-    cost: 'Q. 200.00'
+    cost: 'Q. 200.00',
+    decreto: 'Decreto 29-89'
   },
   {
     id: 5,
@@ -94,7 +99,8 @@ const procedures: Procedure[] = [
       'Notificar cambio al nuevo representante'
     ],
     estimatedTime: '5-10 días hábiles',
-    cost: 'Q. 100.00'
+    cost: 'Q. 100.00',
+    decreto: 'Decreto 29-89'
   },
   {
     id: 6,
@@ -110,7 +116,8 @@ const procedures: Procedure[] = [
       'Emisión de resolución modificatoria'
     ],
     estimatedTime: '15-20 días hábiles',
-    cost: 'Q. 300.00'
+    cost: 'Q. 300.00',
+    decreto: 'Decreto 29-89'
   },
   {
     id: 7,
@@ -126,7 +133,8 @@ const procedures: Procedure[] = [
       'Emisión de resolución de adición'
     ],
     estimatedTime: '10-15 días hábiles',
-    cost: 'Q. 250.00'
+    cost: 'Q. 250.00',
+    decreto: 'Decreto 29-89'
   },
   {
     id: 8,
@@ -142,7 +150,8 @@ const procedures: Procedure[] = [
       'Emisión de resolución de autorización'
     ],
     estimatedTime: '12-18 días hábiles',
-    cost: 'Q. 400.00'
+    cost: 'Q. 400.00',
+    decreto: 'Decreto 29-89'
   },
   {
     id: 9,
@@ -158,7 +167,8 @@ const procedures: Procedure[] = [
       'Emisión de resolución de autorización'
     ],
     estimatedTime: '10-15 días hábiles',
-    cost: 'Q. 300.00'
+    cost: 'Q. 300.00',
+    decreto: 'Decreto 29-89'
   },
   {
     id: 10,
@@ -174,7 +184,8 @@ const procedures: Procedure[] = [
       'Emisión de resolución modificatoria'
     ],
     estimatedTime: '8-12 días hábiles',
-    cost: 'Q. 200.00'
+    cost: 'Q. 200.00',
+    decreto: 'Decreto 29-89'
   },
   {
     id: 11,
@@ -190,7 +201,8 @@ const procedures: Procedure[] = [
       'Actualización en resolución vigente'
     ],
     estimatedTime: '10-15 días hábiles',
-    cost: 'Q. 250.00'
+    cost: 'Q. 250.00',
+    decreto: 'Decreto 29-89'
   },
   {
     id: 12,
@@ -205,7 +217,8 @@ const procedures: Procedure[] = [
       'Confirmación del registro'
     ],
     estimatedTime: '3-5 días hábiles',
-    cost: 'Q. 50.00'
+    cost: 'Q. 50.00',
+    decreto: 'Decreto 65-89'
   },
   {
     id: 13,
@@ -221,7 +234,8 @@ const procedures: Procedure[] = [
       'Confirmación del cambio'
     ],
     estimatedTime: '5-8 días hábiles',
-    cost: 'Q. 100.00'
+    cost: 'Q. 100.00',
+    decreto: 'Decreto 65-89'
   },
   {
     id: 14,
@@ -237,7 +251,8 @@ const procedures: Procedure[] = [
       'Confirmación del cambio'
     ],
     estimatedTime: '3-5 días hábiles',
-    cost: 'Q. 50.00'
+    cost: 'Q. 50.00',
+    decreto: 'Decreto 65-89'
   },
   {
     id: 15,
@@ -253,7 +268,8 @@ const procedures: Procedure[] = [
       'Cierre definitivo del expediente'
     ],
     estimatedTime: '15-20 días hábiles',
-    cost: 'Q. 100.00'
+    cost: 'Q. 100.00',
+    decreto: 'Decreto 65-89'
   },
   {
     id: 16,
@@ -269,7 +285,8 @@ const procedures: Procedure[] = [
       'Actualización de inventarios'
     ],
     estimatedTime: '8-12 días hábiles',
-    cost: 'Q. 150.00'
+    cost: 'Q. 150.00',
+    decreto: 'Decreto 65-89'
   },
   {
     id: 17,
@@ -285,7 +302,8 @@ const procedures: Procedure[] = [
       'Actualización de registros'
     ],
     estimatedTime: '10-15 días hábiles',
-    cost: 'Q. 300.00'
+    cost: 'Q. 300.00',
+    decreto: 'Decreto 65-89'
   },
   {
     id: 18,
@@ -301,7 +319,8 @@ const procedures: Procedure[] = [
       'Confirmación de la notificación'
     ],
     estimatedTime: '5-8 días hábiles',
-    cost: 'Q. 100.00'
+    cost: 'Q. 100.00',
+    decreto: 'Decreto 65-89'
   },
   {
     id: 19,
@@ -317,7 +336,8 @@ const procedures: Procedure[] = [
       'Registro de la operación'
     ],
     estimatedTime: '8-12 días hábiles',
-    cost: 'Q. 200.00'
+    cost: 'Q. 200.00',
+    decreto: 'Decreto 65-89'
   },
   {
     id: 20,
@@ -333,7 +353,8 @@ const procedures: Procedure[] = [
       'Registro de la operación'
     ],
     estimatedTime: '10-15 días hábiles',
-    cost: 'Q. 250.00'
+    cost: 'Q. 250.00',
+    decreto: 'Decreto 65-89'
   },
   {
     id: 21,
@@ -349,7 +370,8 @@ const procedures: Procedure[] = [
       'Confirmación de recepción'
     ],
     estimatedTime: '1-3 días hábiles',
-    cost: 'Gratuito'
+    cost: 'Gratuito',
+    decreto: 'Decreto 65-89'
   },
   {
     id: 22,
@@ -365,7 +387,8 @@ const procedures: Procedure[] = [
       'Emisión de nueva resolución de calificación'
     ],
     estimatedTime: '20-30 días hábiles',
-    cost: 'Q. 750.00'
+    cost: 'Q. 750.00',
+    decreto: 'Decreto 65-89'
   }
 ];
 
@@ -381,8 +404,8 @@ const categories = [
 
 const decretos = [
   { value: 'all', label: 'Todos los decretos' },
-  { value: 'd2989', label: 'Decreto 29-89' },
-  { value: 'd6589', label: 'Decreto 65-89' },
+  { value: 'Decreto 29-89', label: 'Decreto 29-89' },
+  { value: 'Decreto 65-89', label: 'Decreto 65-89' },
 ];
 
 const ProcessFlow: React.FC = () => {
@@ -402,11 +425,14 @@ const ProcessFlow: React.FC = () => {
   };
 
   const filteredProcedures = procedures.filter(procedure => {
-    const matchesSearch = 
+    const matchesSearch =
       procedure.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       procedure.description.toLowerCase().includes(searchTerm.toLowerCase());
 
-    if (selectedCategory === 'all') return matchesSearch;
+    const matchesDecreto =
+      selectedDecreto === 'all' || procedure.decreto === selectedDecreto;
+
+    if (selectedCategory === 'all') return matchesSearch && matchesDecreto;
 
     const categoryMatches = {
       registration: [1, 22],
@@ -417,7 +443,11 @@ const ProcessFlow: React.FC = () => {
       cancellation: [15]
     };
 
-    return matchesSearch && categoryMatches[selectedCategory as keyof typeof categoryMatches]?.includes(procedure.id);
+    return (
+      matchesSearch &&
+      matchesDecreto &&
+      categoryMatches[selectedCategory as keyof typeof categoryMatches]?.includes(procedure.id)
+    );
   });
 
   return (
