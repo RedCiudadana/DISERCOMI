@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FileText, CheckCircle, Clock, CreditCard, ArrowRight, Shield, Zap, Globe, Users, Play, ChevronLeft, ChevronRight, BarChart3 } from 'lucide-react';
+import { FileText, ArrowRight, Shield, Zap, Globe, Users, Play, ChevronLeft, ChevronRight, BarChart3 } from 'lucide-react';
 import Button from '../components/ui/Button';
 import LoginModal from '../components/auth/LoginModal';
+import reloj from '../assets/iconos/reloj_azul.svg';
+import documento from '../assets/iconos/documento_azul.svg';
+import personas from '../assets/iconos/personas_azul.svg';
+import grafica from '../assets/iconos/grafica_azul.svg';
+
 
 const Home: React.FC = () => {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
@@ -29,7 +34,7 @@ const Home: React.FC = () => {
 
   const features = [
     {
-      icon: FileText,
+      icon: documento,
       title: 'Solicitud Digital',
       description: 'Complete formularios en línea sin necesidad de desplazarse físicamente.',
       color: 'from-primary-500 to-primary-600'
@@ -41,7 +46,7 @@ const Home: React.FC = () => {
     //   color: 'from-secondary-500 to-secondary-600'
     // },
     {
-      icon: Clock,
+      icon: reloj,
       title: 'Seguimiento en Tiempo Real',
       description: 'Consulte el estado de sus trámites en cualquier momento.',
       color: 'from-primary-600 to-primary-700'
@@ -280,9 +285,7 @@ const Home: React.FC = () => {
                 className="group bg-white p-8 rounded-2xl shadow-soft hover:shadow-large transition-all duration-300 border border-gray-200 hover:border-primary-200 animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className={`flex items-center justify-center h-14 w-14 rounded-xl bg-gradient-to-r ${feature.color} text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-soft`}>
-                  <feature.icon size={24} />
-                </div>
+                <img src={feature.icon} alt={feature.title} className="h-14 w-14 mb-4" style={{ borderRadius: '10px' }} />
                 <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary-700 transition-colors">
                   {feature.title}
                 </h3>
@@ -309,9 +312,7 @@ const Home: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="group bg-white p-8 rounded-2xl shadow-soft hover:shadow-large transition-all duration-300 border border-gray-200 hover:border-primary-200 animate-slide-up">
-              <div className="flex items-center justify-center h-14 w-14 rounded-xl bg-gradient-to-r from-primary-500 to-primary-600 text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-soft mx-auto">
-                <Users size={24} />
-              </div>
+              <img src={personas} alt="Personas" className="h-14 w-14 m-auto mb-4" style={{ borderRadius: '10px' }} />
               <h3 className="text-xl font-semibold mb-4 text-gray-900 group-hover:text-primary-700 transition-colors text-center">
                 Opinión Ciudadana
               </h3>
@@ -332,9 +333,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className="group bg-white p-8 rounded-2xl shadow-soft hover:shadow-large transition-all duration-300 border border-gray-200 hover:border-secondary-200 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              <div className="flex items-center justify-center h-14 w-14 rounded-xl bg-gradient-to-r from-secondary-500 to-secondary-600 text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-soft mx-auto">
-                <BarChart3 size={24} />
-              </div>
+              <img src={documento} alt="documento" className="h-14 w-14 m-auto mb-4" style={{ borderRadius: '10px' }} />
               <h3 className="text-xl font-semibold mb-4 text-gray-900 group-hover:text-secondary-700 transition-colors text-center">
                 Boleta Estadística 2024
               </h3>
@@ -355,9 +354,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className="group bg-white p-8 rounded-2xl shadow-soft hover:shadow-large transition-all duration-300 border border-gray-200 hover:border-success-200 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="flex items-center justify-center h-14 w-14 rounded-xl bg-gradient-to-r from-secondary-500 to-secondary-600 text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-soft mx-auto">
-                <FileText size={24} />
-              </div>
+              <img src={grafica} alt="grafica" className="h-14 w-14 m-auto mb-4" style={{ borderRadius: '10px' }} />
               <h3 className="text-xl font-semibold mb-4 text-gray-900 group-hover:text-success-700 transition-colors text-center">
                 Reporte Estadístico 2024
               </h3>
